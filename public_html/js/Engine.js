@@ -7,6 +7,7 @@ class Engine {
 	constructor() {}
 
 	static runRenderLoop() {
+		// Engine.scene.debugLayer.show();
 		Engine.engine.runRenderLoop(function () {
 			Engine.scene.render();
 		});

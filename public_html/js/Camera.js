@@ -14,7 +14,7 @@ class Camera {
 		  target point,
 		  scene
 		*/
-		Camera.camera = new BABYLON.ArcRotateCamera("camera", -Math.PI / 2,  Math.PI / 4, 5, new BABYLON.Vector3(0, 0, 0), Engine.scene);
+		Camera.camera = new BABYLON.ArcRotateCamera("camera", -Math.PI / 2,  Math.PI / 4, 105, new BABYLON.Vector3(0, 0, 0), Engine.scene);
 
 		//Can't zoom in less than 105 units
 		Camera.camera.lowerRadiusLimit = 105;
