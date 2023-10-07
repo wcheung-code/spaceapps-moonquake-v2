@@ -6,7 +6,6 @@ class Sun {
 	constructor() {}
 
 	init() {
-
 		/*Light properties: name,
 		  position,
 		  direction,
