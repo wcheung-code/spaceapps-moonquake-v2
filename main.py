@@ -6,7 +6,7 @@ import csv
 
 #current_directory = os.path.abspath(os.path.dirname(__file__))
 
-csv_file_path = "/app/Nakamura_1979_processed.csv"
+#csv_file_path = "/app/Nakamura_1979_processed.csv"
 
 app = FastAPI()
 app.mount("/app", StaticFiles(directory="app"), name="app")
