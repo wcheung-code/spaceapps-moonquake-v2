@@ -6,4 +6,4 @@ COPY requirements.txt .
 RUN ls -al
 RUN pip install --trusted-host pypi.python.org -r requirements.txt
 EXPOSE 80
-CMD ["uvicorn", "--host", "0.0.0.0", "--port", "80", "main:app"]
+CMD ["uvicorn", "--host", "0.0.0.0", "--port", "80", "--root-path", "/app", "main:app"]
