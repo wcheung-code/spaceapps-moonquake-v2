@@ -8,7 +8,8 @@ current_directory = os.path.abspath(os.path.dirname(__file__))
 csv_file_path = "/app/Nakamura_1979_processed.csv"
 
 app = FastAPI()
-
+files_in_directory = os.listdir('/app')
+print(files_in_directory)
 @app.post("/upload_csv/")
 async def upload_csv():
     try:
