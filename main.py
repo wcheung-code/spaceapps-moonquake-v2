@@ -5,7 +5,7 @@ import csv
 
 current_directory = os.path.abspath(os.path.dirname(__file__))
 
-csv_file_path = os.path.join(current_directory, "Nakamura_1979_processed.csv")
+csv_file_path = "/app/Nakamura_1979_processed.csv"
 
 app = FastAPI()
 
