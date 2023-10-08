@@ -1,7 +1,7 @@
 class Engine {
 
 	static canvas = document.getElementById("canvas");
-	static engine = new BABYLON.Engine(Engine.canvas, true);
+	static engine = new BABYLON.Engine(Engine.canvas, false);
 	static scene = new BABYLON.Scene(Engine.engine);
 
 	constructor() {}

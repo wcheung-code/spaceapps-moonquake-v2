@@ -1,7 +1,5 @@
 import Engine from "./Engine.js";
 import Camera from "./Camera.js";
-import Sun from "./Sun.js";
-import Moon from "./Moon.js";
 import Environment from "./Environment.js";
 
 //Prevents zooming in/out with mouse wheel or trackpad

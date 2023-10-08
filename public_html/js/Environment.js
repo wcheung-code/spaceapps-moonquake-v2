@@ -1,4 +1,5 @@
 import Engine from "./Engine.js";
+import Earth from "./Earth.js";
 import Moon from "./Moon.js";
 import Sun from "./Sun.js";
 
@@ -19,8 +20,22 @@ class Environment {
 	init() {
 		Environment.initStars();
 
+		new Earth().init();
 		new Moon().init();
 		new Sun().init();
+
+		//parent meshes to transform-node
+		const meshes = Engine.scene.meshes;
+		let root = new BABYLON.TransformNode();
+		meshes.forEach(mesh => {
+			if (mesh.name !== "stars") {
+				mesh.parent = root;
+			}
+		});
+
+		Engine.scene.registerBeforeRender(function () {
+			root.rotate(BABYLON.Axis.Y, 0.0005, BABYLON.Space.LOCAL);
+		});
 	}
 }
 
