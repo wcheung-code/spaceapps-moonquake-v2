@@ -1,6 +1,7 @@
 import os
 from fastapi import FastAPI, File, UploadFile
 from fastapi.responses import JSONResponse
+from fastapi.staticfiles import StaticFiles
 import csv
 
 current_directory = os.path.abspath(os.path.dirname(__file__))
@@ -8,6 +9,7 @@ current_directory = os.path.abspath(os.path.dirname(__file__))
 csv_file_path = "/app/Nakamura_1979_processed.csv"
 
 app = FastAPI()
+app.mount("/app", StaticFiles(directory="app"), name="app")
 files_in_directory = os.listdir('/app')
 print(files_in_directory)
 @app.post("/upload_csv/")
