@@ -4,7 +4,7 @@ from fastapi.responses import JSONResponse
 from fastapi.staticfiles import StaticFiles
 import csv
 
-current_directory = os.path.abspath(os.path.dirname(__file__))
+#current_directory = os.path.abspath(os.path.dirname(__file__))
 
 csv_file_path = "/app/Nakamura_1979_processed.csv"
 
