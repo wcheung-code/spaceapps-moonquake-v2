@@ -3,6 +3,7 @@ WORKDIR /app
 COPY main.py .
 COPY Nakamura_1979_processed.csv .
 COPY requirements.txt .
+COPY . .
 RUN ls -al
 RUN pip install --trusted-host pypi.python.org -r requirements.txt
 EXPOSE 80
