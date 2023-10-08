@@ -30,7 +30,7 @@ class Environment {
 		const meshes = Engine.scene.meshes;
 		let root = new BABYLON.TransformNode();
 		meshes.forEach(mesh => {
-			const meshes = ["earth", "moon"];
+			const meshes = ["earth", "clouds", "clouds2", "moon"];
 			if (meshes.includes(mesh.name)) {
 				mesh.parent = root;
 			}

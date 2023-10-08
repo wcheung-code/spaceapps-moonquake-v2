@@ -14,6 +14,7 @@ class Moon {
 			updatable: true
 		}, Engine.scene, true);
 
+		//Deforms the vertices to generate the lunar elevation
 		this.#moon.applyDisplacementMap("./textures/moon_heightmap.png", 0, 2);
 
 		this.#moon.rotation = new BABYLON.Vector3(0, degreesToRadians(-90), 0);

@@ -13,7 +13,7 @@ class Sun {
 		  exponent for light falloff,
 		  scene
 		*/
-		var sunlight = new BABYLON.SpotLight("sunlight", new BABYLON.Vector3(0, 0, -3000), new BABYLON.Vector3(0, 0, 1), Math.PI / 2, 1, Engine.scene);
+		const sunlight = new BABYLON.SpotLight("sunlight", new BABYLON.Vector3(0, 0, -3000), new BABYLON.Vector3(0, 0, 1), Math.PI / 2, 1, Engine.scene);
 		sunlight.diffuse = new BABYLON.Color3(1, 1, 0.8);
 		sunlight.specular = new BABYLON.Color3(1, 1, 1);
 	}
