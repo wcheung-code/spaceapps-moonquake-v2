@@ -12,3 +12,8 @@ new Camera().createCamera();
 new Environment().init();
 
 Engine.runRenderLoop();
+
+//A resize event listener for the browser window
+window.addEventListener("resize", function () {
+    Engine.engine.resize();
+});

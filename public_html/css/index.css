@@ -1,11 +1,12 @@
-body {
-	padding: 0;
+html, body {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
 	margin: 0;
-	height: 100vh;
+	padding: 0;
 }
 /* Canvas that takes up full screen height */
 canvas {
-	display: block;
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 }
