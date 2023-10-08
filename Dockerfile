@@ -1,6 +1,7 @@
 FROM python:3.8-slim
 WORKDIR /app
 COPY main.py .
+COPY obspy-analysis/Nakamura_1979_processed.csv .
 COPY requirements.txt .
 RUN ls -al
 RUN pip install --trusted-host pypi.python.org -r requirements.txt
